@@ -297,6 +297,7 @@ Make sure to replace ‘AllThePackages’ with your API key ✌️.
         </span><span class="s2">"recipient_country_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NL"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"recipient_email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jan@abracad.abra"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"recipient_phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"06 23456789"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"delivery_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-05-04"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"delivery_instructions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Drop it in the shed"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Order 12345"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"package_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
@@ -325,8 +326,8 @@ Make sure to replace ‘AllThePackages’ with your API key ✌️.
     </span><span class="s2">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Order 12345"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"package_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
     </span><span class="s2">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"delivery_time_slot_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-03-20T18:00:00+01:00"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"delivery_time_slot_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-03-20T22:00:00+01:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"delivery_time_slot_start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-05-04T18:00:00+01:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"delivery_time_slot_end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-05-04T22:00:00+01:00"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"track_trace_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f4566ab0-6f78-4266-a8b9-07ba0e50db5d"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"label_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://assets.sandd2me.nl/v1/orders/d293e37b-b300-4abd-8b32-450e6a17d573/label"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"value_added_services"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
@@ -420,10 +421,16 @@ Make sure to replace ‘AllThePackages’ with your API key ✌️.
 <td>The phone number of the recipient</td>
 </tr>
 <tr>
+<td>delivery_date</td>
+<td>false</td>
+<td>yyyy-mm-dd</td>
+<td>The delivery date can be max 3 weeks in the future</td>
+</tr>
+<tr>
 <td>delivery_instructions</td>
 <td>false</td>
 <td><code>/^.+$/</code></td>
-<td>Extra nstructions that the recipient might want to add</td>
+<td>Extra instructions that the recipient might want to add</td>
 </tr>
 <tr>
 <td>reference</td>
